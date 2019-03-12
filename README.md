@@ -1,6 +1,6 @@
-# Capistrano::npm
+# Capistrano::pnpm
 
-npm support for Capistrano 3.x
+pnpm support for Capistrano 3.x
 
 ## Installation
 
@@ -8,7 +8,7 @@ Add this line to your application's Gemfile:
 
 ```ruby
 gem 'capistrano', '~> 3.1.0'
-gem 'capistrano-npm'
+gem 'capistrano-pnpm'
 ```
 
 And then execute:
@@ -17,18 +17,18 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install capistrano-npm
+    $ gem install capistrano-pnpm
 
 ## Usage
 
 Require in `Capfile` to use the default task:
 
 ```ruby
-require 'capistrano/npm'
+require 'capistrano/pnpm'
 ```
 
 The task will run before `deploy:updated` as part of Capistrano's default deploy,
-or can be run in isolation with `cap production npm:install`
+or can be run in isolation with `cap production pnpm:install`
 
 Configurable options:
 
@@ -39,12 +39,6 @@ set :npm_roles, :all                                     # default
 set :npm_env_variables, {}                               # default
 set :npm_method, 'install'                               # default
 ```
-
-### NPM Method
-
-As of version 5.7.0 of npm, a new install method (`ci`) was introduced which utilises
-the `package-lock.json` file. Change `npm_method` to `ci` in order to use make
-use of the improved installation method.
 
 ### Dependencies
 

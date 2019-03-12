@@ -3,13 +3,13 @@ lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
-  spec.name          = 'capistrano-npm'
-  spec.version       = '1.0.3'
-  spec.authors       = ['Scott Walkinshaw']
-  spec.email         = ['scott.walkinshaw@gmail.com']
-  spec.description   = %q{npm support for Capistrano 3.x}
-  spec.summary       = %q{npm support for Capistrano 3.x}
-  spec.homepage      = 'https://github.com/capistrano/npm'
+  spec.name          = 'capistrano-pnpm'
+  spec.version       = '1.0.0'
+  spec.authors       = ['Alex Butler']
+  spec.email         = ['alex@alex-j-butler.com']
+  spec.description   = %q{pnpm support for Capistrano 3.x}
+  spec.summary       = %q{pnpm support for Capistrano 3.x}
+  spec.homepage      = 'https://github.com/Qixalite/pnpm'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files`.split($/)
